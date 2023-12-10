@@ -1,0 +1,79 @@
+.TodoItem {
+  width: 80%;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 4rem auto 2rem;
+  height: 5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.2),
+    5px 5px 9px rgba(94, 104, 121, 0.2);
+}
+
+.check {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2.4rem;
+}
+
+.closer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  top: -2.8rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.closer-container .closer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ababab;
+}
+
+.closer-container .closer:hover {
+  color: rgb(201, 66, 66);
+  cursor: pointer;
+}
+
+.check-container {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: transparent;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.2),
+   5px 5px 9px rgba(94, 104, 121, 0.2);
+}
+
+.check-container.completed {
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.2),
+     inset 5px 5px 9px rgba(94, 104, 121, 0.2);
+}
+
+.check.completed {
+  color: #28a4a8;
+}
+
+.todo {
+    font-size: 2.4rem;
+    color: rgb(255, 255, 255);
+}
+
+.todo.completed {
+    text-decoration: line-through;
+}
+
+.check-container:hover span{
+    cursor: pointer;
+    color: #28a4a83f;
+}
+
